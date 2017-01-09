@@ -1,0 +1,31 @@
+/*
+font-family: 'Indie Flower', cursive; =>Titulos
+font-family: 'Roboto', sans-serif; =>Texto
+*/
+body,html{
+    background-color: #EEEEEE;
+    box-sizing: border-box;
+    height: 100%;
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+    color: #00ADB5;
+    margin: 0;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #393E46;
+}
+.imagen-parallax>img{
+    background-image: url("../../model/img/her.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width:1024px){
+    .imagen{
+        background-attachment: scroll;
+    }
+}
