@@ -7,23 +7,64 @@ body,html{
     box-sizing: border-box;
     height: 100%;
 }
-h1{
-    font-family: 'Indie Flower', cursive;
-    color: #00ADB5;
-    margin: 0;
-}
-p{
-    font-family: 'Roboto', sans-serif;
-    color: #393E46;
-}
-.imagen-parallax>img{
-    background-image: url("../../model/img/her.jpg");
-    height: 100%;
+.imagen-parallax{
+    background-image: url(../../model/img/her.jpg);
+    min-height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    opacity: 0.8;
+    box-sizing: border-box;
 }
+.icono-menu{
+    display: block;
+    position: fixed;
+    color: #00ADB5;
+    font-size: 1.5em;
+    top: 5%;
+    left: 90%;
+}
+.icono-app{
+    display: block;
+    position: absolute;
+    color: #00ADB5;
+    font-size: 1.7em;
+    top: 5%;
+    left: 5%;
+}
+.texto-imagen-parallax{
+    display: inline-block;
+    position: absolute;
+    background-color: #222831;
+    min-width: 32%;
+    top: 80%;
+    left: 35%;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    opacity: 0.5;
+}
+.texto-imagen-parallax>h1{
+    color: #EEEEEE;
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
+.texto-parallax{
+    background-color: red;
+    min-height: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.texto-parallax>.container{
+    background-color: blue;
+}
+.texto-parallax .container>p{
+    text-align: center;
+}
+/*Responsive*/
 @media only screen and (max-device-width:1024px){
     .imagen{
         background-attachment: scroll;

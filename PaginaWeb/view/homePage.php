@@ -24,8 +24,9 @@ include_once("../model/homePage/content.php");
     <body>
         <?php
         $content = new content;
-        $content->imagen();
+        $content->imagenPrincipal();
         $content->texto();
+        $content->p();
         ?>
     </body>
 </html>
